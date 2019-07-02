@@ -1,0 +1,85 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+/* Angular prebuild theme */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+/*  Normalize CSS */
+@import 'normalize.css/normalize.css';
+
+/* ***************************************************************************
+   Main Page
+*/
+html,
+body {
+  background-color: rgb(236, 233, 233);
+  height: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+h1, h2, h3, h4 {
+  font-family: Roboto,sans-serif;
+}
+
+.wrapper {
+  height: inherit!important;
+  min-height: inherit!important;
+}
+
+/* *************************************************************************************
+    Angular Material customizations
+*/
+
+/* *************************************************************************************
+    Loading Spinner CSS
+*/
+.loader-spinner {
+  margin: 0 auto;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #673ab7;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* *************************************************************************************
+    Fonts
+*/
+@font-face {
+  font-family: RajdhaniRegular;
+  src: url("/assets/fonts/RajdhaniRegular.woff") format("woff"), url("/assets/fonts/RajdhaniRegular.ttf")  format("truetype");
+}
+@font-face {
+  font-family: RajdhaniBold;
+  src: url("/assets/fonts/RajdhaniBold.woff") format("woff"), url("/assets/fonts/RajdhaniBold.ttf")  format("truetype");
+}
+@font-face {
+  font-family: RajdhaniMedium;
+  src: url("/assets/fonts/RajdhaniMedium.woff") format("woff"), url("/assets/fonts/RajdhaniMedium.ttf")  format("truetype");
+}
