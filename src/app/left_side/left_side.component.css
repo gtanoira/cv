@@ -1,8 +1,21 @@
+a#linkedIn {
+  color: black;
+}
+
 .foto-bloque {
   background:  rgb(145, 21, 21);
   height: 150px;
   margin-left: 1px;
   margin-right: 1px;
+}
+
+.leftSide-text {
+  font-size: 14px;
+}
+
+h3 {
+  color: rgb(145, 21, 21);
+  margin-left: 10px;
 }
 
 .img-redonda {
@@ -16,5 +29,6 @@
 }
 
 .mat-icon {
-  color: rgb(145, 21, 21);;
+  color: rgb(145, 21, 21);
+  width: 18px;
 }

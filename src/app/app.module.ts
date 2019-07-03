@@ -9,8 +9,11 @@ import {
   MatSelectModule,
   MatTabsModule
 } from '@angular/material';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { AppRoutingModule } from './app-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Components
 import { AppComponent } from './app.component';
@@ -23,12 +26,15 @@ import { LeftSideComponent } from './left_side/left_side.component';
   ],
   imports: [
     AppRoutingModule,
+    BrowserAnimationsModule,
     BrowserModule,
     FlexLayoutModule,
+    HttpClientModule,
     MatButtonModule,
     MatCardModule,
     MatIconModule,
     MatMenuModule,
+    MatTooltipModule,
     MatSelectModule,
     MatTabsModule
   ],

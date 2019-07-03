@@ -8,10 +8,153 @@
   <!-- Foto  -->
   <img class="img-redonda" src="/assets/images/foto02.jpg">
 
+  <!-- DATOS PERSONALES -->
+  <div
+    fxLayout="row wrap">
+    <div
+      fxLayoutAlign="start center">
+      <h3>
+        Datos Personales
+      </h3>
+    </div>
+  </div>
+
   <!-- Home Adress -->
   <div
-    class="home-address">
-    <mat-icon svgIcon="homeAddress"></mat-icon>
-    {{ homeAddress }}
+    fxLayout="row wrap">
+    <div
+      fxFlex="0 0 60px"
+      fxLayoutAlign="center">
+      <mat-icon svgIcon="homeAddress"></mat-icon>
+    </div>
+    <div
+      class="leftSide-text"
+      fxFlex="calc(100% - 60px)"
+      fxLayoutAlign="start center">
+      {{homeAddress}}
+      &nbsp;
+      <mat-icon svgIcon="argentina-round"></mat-icon>
+    </div>
+  </div>
+  <br>
+
+  <!-- Phone -->
+  <div
+    fxLayout="row wrap">
+    <div
+      fxFlex="0 0 60px"
+      fxLayoutAlign="center">
+      <mat-icon svgIcon="phone"></mat-icon>
+      &nbsp;
+      <mat-icon svgIcon="whatsapp"></mat-icon>
+    </div>
+    <div
+      class="leftSide-text"
+      fxFlex="calc(100% - 60px)"
+      fxLayoutAlign="start center">
+      <mat-icon svgIcon="argentina"></mat-icon>
+      &nbsp;
+      +54 {{phoneNo}}
+    </div>
+  </div>
+  <br>
+
+  <!-- Email -->
+  <div
+    fxLayout="row wrap">
+    <div
+      fxFlex="0 0 60px"
+      fxLayoutAlign="center">
+      <mat-icon svgIcon="email"></mat-icon>
+    </div>
+    <div
+      class="leftSide-text"
+      fxFlex="calc(100% - 60px)"
+      fxLayoutAlign="start center">
+      {{email}}
+    </div>
+  </div>
+  <br>
+
+  <!-- Skype -->
+  <div
+    fxLayout="row wrap">
+    <div
+      fxFlex="0 0 60px"
+      fxLayoutAlign="center">
+      <a
+        href="skype:Gonzalo.Martinez.Tanoira?call"
+        matTooltip="Call Me"
+        matTooltipPosition="above">
+        <mat-icon svgIcon="skype"></mat-icon>
+      </a>
+    </div>
+    <div
+      class="leftSide-text"
+      fxFlex="calc(100% - 60px)"
+      fxLayoutAlign="start center">
+      {{skype}}
+    </div>
+  </div>
+  <br>
+
+  <!-- LinkedIn -->
+  <div
+    fxLayout="row wrap">
+    <div
+      fxFlex="0 0 60px"
+      fxLayoutAlign="center">
+      <a href="https://www.linkedin.com/in/gonzalomtanoira/" target="_blank">
+        <mat-icon svgIcon="linkedIn"></mat-icon>
+      </a>
+    </div>
+    <div
+      class="leftSide-text"
+      fxFlex="calc(100% - 60px)"
+      fxLayoutAlign="start center">
+      <a id="linkedIn" href="https://www.linkedin.com/in/gonzalomtanoira/" target="_blank">
+        Gonzalo Martinez Tanoira
+      </a>
+    </div>
+  </div>
+
+  <!-- IDIOMAS -->
+  <div
+    fxLayout="row wrap">
+    <div
+      fxLayoutAlign="start center">
+      <h3>
+        Idiomas
+      </h3>
+    </div>
+  </div>
+
+  <!-- Idiomas -->
+  <div
+    fxLayout="row wrap">
+    <ng-template *ngFor="let idioma of idiomas">
+      <!-- Nombre Idioma -->
+      <div
+        fxFlex="0 0 100px"
+        fxLayoutAlign="start">
+        {{ idioma.name }}}
+      </div>
+
+      <!-- Puntos  -->
+      <div *ngFor="let nivel of idiomaNiveles; index as i">
+
+      </div>
+
+    </ng-template>
+
+
+    <div
+      class="leftSide-text"
+      fxFlex="calc(100% - 60px)"
+      fxLayoutAlign="start center">
+      <a id="linkedIn" href="https://www.linkedin.com/in/gonzalomtanoira/" target="_blank">
+        Gonzalo Martinez Tanoira
+      </a>
+    </div>
   </div>
 </div>
